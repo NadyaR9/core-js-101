@@ -94,8 +94,27 @@ function timeSpanToString(/* startDate, endDate */) {
  */
 function angleBetweenClockHands(/* date */) {
   throw new Error('Not implemented');
+  // console.log(new Date(date));
+  // console.log('hours', new Date(date).getHours());
+  // console.log('minutes', new Date(date).getMinutes());
+  // const dateTime = new Date(date);
+  // const minutes = dateTime.getMinutes();
+  // const hours = dateTime.getHours();
+  // const hAngle = (60 * hours + minutes) * 0.5;
+  // const mAngle = 6 * minutes;
+  // let angle = Math.abs(hAngle - mAngle);
+  // angle = Math.min(angle, 360 - angle);
+  // console.log((angle * Math.PI) / 180);
+  // return (angle * Math.PI) / 180;
 }
-
+// angleBetweenClockHands(Date.UTC(2016, 4, 5, 0, 0));
+// angleBetweenClockHands(Date.UTC(2016, 3, 5, 3, 0));
+// angleBetweenClockHands(Date.UTC(2016,3,5,18, 0));
+// angleBetweenClockHands(Date.UTC(2016,3,5,21, 0));
+// console.log(angleBetweenClockHands(Date.UTC(2016, 2, 5, 0, 0)));
+// console.log(angleBetweenClockHands(Date.UTC(2016, 3, 5, 3, 0)));
+// console.log(angleBetweenClockHands(Date.UTC(2016,3,5,18, 0)));
+// console.log(angleBetweenClockHands(Date.UTC(2016,3,5,21, 0)));
 module.exports = {
   parseDataFromRfc2822,
   parseDataFromIso8601,
